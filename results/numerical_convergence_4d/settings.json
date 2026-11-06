@@ -1,0 +1,311 @@
+{
+  "script": "results/numerical_convergence_4d/conv4d.py (wrapper around harp_input.run_harp)",
+  "tests_as_in": "src/run_numerical_tests.py",
+  "tests": {
+    "final": {
+      "nr": 1024,
+      "nz": 256,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 1.2890625e-16
+    },
+    "res": {
+      "nr": 2048,
+      "nz": 2048,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 3.22265625e-17
+    },
+    "box": {
+      "nr": 2048,
+      "nz": 256,
+      "lr_factor": 6.0,
+      "lt_factor": 6.0,
+      "dt_si": 1.2890625e-16
+    },
+    "res_nz": {
+      "nr": 1024,
+      "nz": 2048,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 1.2890625e-16
+    },
+    "res_dt": {
+      "nr": 1024,
+      "nz": 256,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 3.22265625e-17
+    },
+    "res_nr": {
+      "nr": 2048,
+      "nz": 256,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 1.2890625e-16
+    }
+  },
+  "physics": {
+    "temperature_K": 293.0,
+    "wavelength_m": 8.1e-07,
+    "zR_mm": 18.6,
+    "harmonic_order": 23,
+    "objective_scale": 1e-06
+  },
+  "points": {
+    "a": {
+      "label": "4D GP optimum (paper)",
+      "Lzzr": 0.0526,
+      "pzr": 300.0,
+      "intensity_Wcm2": 371000000000000.0,
+      "tau_fs": 11.0
+    },
+    "b": {
+      "label": "best sampled, seed-0 4D main run (iter 24)",
+      "Lzzr": 0.08636716733525729,
+      "pzr": 265.01391289296566,
+      "intensity_Wcm2": 401290995251531.9,
+      "tau_fs": 12.47920015790943
+    },
+    "c": {
+      "label": "stress: short pulse, high intensity",
+      "Lzzr": 0.05,
+      "pzr": 300.0,
+      "intensity_Wcm2": 1000000000000000.0,
+      "tau_fs": 11.0
+    },
+    "d": {
+      "label": "long pulse at the optimum's L, p, I",
+      "Lzzr": 0.0526,
+      "pzr": 300.0,
+      "intensity_Wcm2": 371000000000000.0,
+      "tau_fs": 88.0
+    },
+    "s00": {
+      "label": "2D Sobol point 0",
+      "Lzzr": 0.9985567013220862,
+      "pzr": 14.861911294050515,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s01": {
+      "label": "2D Sobol point 1",
+      "Lzzr": 0.6475692328624428,
+      "pzr": 296.1181415794417,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s02": {
+      "label": "2D Sobol point 2",
+      "Lzzr": 0.12424421408213676,
+      "pzr": 126.69905345141888,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s03": {
+      "label": "2D Sobol point 3",
+      "Lzzr": 1.2583595118625088,
+      "pzr": 183.99095980636775,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s04": {
+      "label": "2D Sobol point 4",
+      "Lzzr": 1.4377311696996913,
+      "pzr": 88.15238307975233,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s05": {
+      "label": "2D Sobol point 5",
+      "Lzzr": 0.3036162370350212,
+      "pzr": 225.73029924184084,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s06": {
+      "label": "2D Sobol point 6",
+      "Lzzr": 0.46801805980503564,
+      "pzr": 51.45305847655982,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s07": {
+      "label": "2D Sobol point 7",
+      "Lzzr": 0.8190044771740214,
+      "pzr": 262.13958533573896,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s08": {
+      "label": "2D Sobol point 8",
+      "Lzzr": 0.87046069085598,
+      "pzr": 142.23678256664425,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s09": {
+      "label": "2D Sobol point 9",
+      "Lzzr": 0.5253760617831722,
+      "pzr": 168.4577542534098,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s10": {
+      "label": "2D Sobol point 10",
+      "Lzzr": 0.2478083641966805,
+      "pzr": 31.595555316656828,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s11": {
+      "label": "2D Sobol point 11",
+      "Lzzr": 1.387622385090217,
+      "pzr": 279.3890200126916,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s12": {
+      "label": "2D Sobol point 12",
+      "Lzzr": 1.2198533408436925,
+      "pzr": 71.88060239888728,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s13": {
+      "label": "2D Sobol point 13",
+      "Lzzr": 0.08003968506585807,
+      "pzr": 241.70751785114408,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s14": {
+      "label": "2D Sobol point 14",
+      "Lzzr": 0.693328139637597,
+      "pzr": 109.70347487088293,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s15": {
+      "label": "2D Sobol point 15",
+      "Lzzr": 1.038411717619747,
+      "pzr": 204.17468499485403,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s16": {
+      "label": "2D Sobol point 16",
+      "Lzzr": 1.1228433130681514,
+      "pzr": 99.05385585967451,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s17": {
+      "label": "2D Sobol point 17",
+      "Lzzr": 0.725450305477716,
+      "pzr": 193.65147014614195,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s18": {
+      "label": "2D Sobol point 18",
+      "Lzzr": 0.04763418944086879,
+      "pzr": 61.5024015493691,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s19": {
+      "label": "2D Sobol point 19",
+      "Lzzr": 1.135342526352033,
+      "pzr": 231.49296296574175,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s20": {
+      "label": "2D Sobol point 20",
+      "Lzzr": 1.3272213885281234,
+      "pzr": 23.411322550848126,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s21": {
+      "label": "2D Sobol point 21",
+      "Lzzr": 0.23951200052630156,
+      "pzr": 271.0410085134208,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s22": {
+      "label": "2D Sobol point 22",
+      "Lzzr": 0.533751644496806,
+      "pzr": 134.3238263418898,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s23": {
+      "label": "2D Sobol point 23",
+      "Lzzr": 0.9311450172029436,
+      "pzr": 160.41854433808476,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s24": {
+      "label": "2D Sobol point 24",
+      "Lzzr": 0.7809794747130946,
+      "pzr": 41.220377256162465,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s25": {
+      "label": "2D Sobol point 25",
+      "Lzzr": 0.3894893009774387,
+      "pzr": 251.7795108212158,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s26": {
+      "label": "2D Sobol point 26",
+      "Lzzr": 0.3824283256474883,
+      "pzr": 77.64729235321283,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s27": {
+      "label": "2D Sobol point 27",
+      "Lzzr": 1.4758353912038729,
+      "pzr": 215.06255610845983,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s28": {
+      "label": "2D Sobol point 28",
+      "Lzzr": 1.2723546014120801,
+      "pzr": 118.64171941392124,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s29": {
+      "label": "2D Sobol point 29",
+      "Lzzr": 0.17894648476503788,
+      "pzr": 176.0961277037859,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s30": {
+      "label": "2D Sobol point 30",
+      "Lzzr": 0.5927877431362868,
+      "pzr": 6.532026129774749,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    },
+    "s31": {
+      "label": "2D Sobol point 31",
+      "Lzzr": 0.9842782819876448,
+      "pzr": 287.915782478638,
+      "intensity_Wcm2": 250000000000000.0,
+      "tau_fs": 22.0
+    }
+  },
+  "convergence_threshold": 5e-08,
+  "omp_num_threads": "unset"
+}

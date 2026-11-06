@@ -1,0 +1,15 @@
+*~
+results/
+results_HarP_BO_compare_SHARED_INITIAL/
+models_HarP_BO_compare_SHARED_INITIAL/
+__pycache__/
+*.png
+.secrets
+data/holdout_4d/diagnostics/
+.DS_Store
+# Raw HarP diagnostics are published in the data record, not in git
+*.h5
+dist/
+.venv/
+.pytest_cache/
+.mypy_cache/

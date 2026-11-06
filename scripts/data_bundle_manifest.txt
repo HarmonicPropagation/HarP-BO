@@ -1,0 +1,17 @@
+# Raw files of the HarP-BO data record (Zenodo), as glob patterns relative to the repository root.
+# These files are not in git. The bundle also contains every file that git tracks under results/
+# and data/, so that the record is complete on its own; scripts/make_data_bundle.py adds those.
+#
+# Lines starting with # are comments.
+
+# HarP energy diagnostics of the published (seed-0) runs and of the numerical convergence tests
+results/bo_*/diagnostics/*.h5
+results/numerical_convergence/diagnostics/*.h5
+results/numerical_convergence_4d/diagnostics/*.h5
+
+# HarP energy diagnostics of the 1024-point 4D Sobol holdout
+data/holdout_4d/diagnostics/*.h5
+
+# Seed study: the GP after every iteration and the HarP diagnostic of every evaluation
+results/seed_study/runs/seed*/*/models/*.pt
+results/seed_study/runs/seed*/*/diagnostics/*.h5

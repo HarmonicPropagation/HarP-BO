@@ -1,0 +1,6 @@
+Linux 7.0.0-34-generic x86_64
+OS: Ubuntu 26.04.1 LTS
+RAM: 30 GB
+HarP: HarP-dev 0ad9c77 (clones ~/src/ext/HarP-runs-v1/harp-*, clean)
+HarP-BO: v1.0.0 = d48ce49 (tree a5e3f40; seed-0 runs recorded 6bedd87, the same tree)
+Threads: OMP/MKL/OPENBLAS/NUMBA_NUM_THREADS=1 per process; <= 10 heavy processes at a time

@@ -1,0 +1,33 @@
+# Dependabot: security updates (enable "Dependabot security updates" in the repository's
+# Settings -> Code security) and monthly version updates, grouped so that packages that must
+# move together arrive in one pull request.
+#
+# requirements.txt and requirements-dev.txt are pip-compile lock files, which Dependabot
+# recompiles from the .in files. requirements-mac.txt is derived from requirements.txt
+# (make mac-lock): if a pull request leaves it out of date, the CI step "Check that
+# requirements-mac.txt matches requirements.txt" fails; run `make mac-lock` on the branch.
+#
+# Before merging an update of the numerics or torch-stack groups, rerun a few BO runs:
+# such updates can change results at round-off level and flip near-ties in the acquisition.
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 3
+    groups:
+      security:
+        applies-to: security-updates
+        patterns: ["*"]
+      torch-stack:
+        patterns: ["torch", "triton", "nvidia-*", "cuda-*"]
+      numerics:
+        patterns: ["numpy", "scipy", "pandas", "scikit-learn", "botorch", "gpytorch", "h5py"]
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: monthly

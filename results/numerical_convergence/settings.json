@@ -1,0 +1,35 @@
+{
+  "points_file": "~/HarP-BO-dev/src/sobol_32_points.txt",
+  "harp_workdir": "~/HarP-dev",
+  "intensity_Wcm2": 250000000000000.0,
+  "tau_fs": 22.0,
+  "temperature_K": 293.0,
+  "wavelength_m": 8.1e-07,
+  "zR_mm": 18.6,
+  "harmonic_order": 23,
+  "objective_scale": 1e-06,
+  "convergence_threshold": 5e-08,
+  "tests": {
+    "final": {
+      "nr": 1024,
+      "nz": 256,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 1.2890625e-16
+    },
+    "res": {
+      "nr": 2048,
+      "nz": 2048,
+      "lr_factor": 3.0,
+      "lt_factor": 3.0,
+      "dt_si": 3.22265625e-17
+    },
+    "box": {
+      "nr": 2048,
+      "nz": 256,
+      "lr_factor": 6.0,
+      "lt_factor": 6.0,
+      "dt_si": 1.2890625e-16
+    }
+  }
+}

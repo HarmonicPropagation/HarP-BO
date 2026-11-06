@@ -1,0 +1,21 @@
+{
+  "upload_type": "software",
+  "title": "HarP-BO: Bayesian optimization of high-harmonic generation with HarP",
+  "description": "<p>HarP-BO is a physics-informed Bayesian optimization framework for high-order harmonic generation in gases, built on BoTorch and GPyTorch and coupled to the HarP propagation code. It optimizes the conversion efficiency over pressure, medium length, laser intensity and pulse duration in nonlinearly transformed coordinates, and reconstructs the conversion-efficiency landscape with a Gaussian-process surrogate.</p><p>This version contains the code, the run data and the analysis scripts behind the paper \"Physics-informed Bayesian optimization of high-harmonic generation in gases\".</p>",
+  "creators": [
+    {"name": "Maslarova, Dominika", "affiliation": "Chalmers University of Technology", "orcid": "0000-0002-2756-3722"},
+    {"name": "Jansson, Patrik", "affiliation": "Chalmers University of Technology and University of Gothenburg", "orcid": "0000-0003-3078-1437"},
+    {"name": "Pouyez, Mattys", "affiliation": "Chalmers University of Technology", "orcid": "0009-0005-9057-3228"}
+  ],
+  "license": "MIT",
+  "communities": [{"identifier": "harmonicpropagation"}],
+  "keywords": [
+    "Bayesian optimization",
+    "high-order harmonic generation",
+    "Gaussian processes",
+    "phase matching"
+  ],
+  "related_identifiers": [
+    {"identifier": "https://github.com/HarmonicPropagation/HarP", "relation": "references", "resource_type": "software"}
+  ]
+}

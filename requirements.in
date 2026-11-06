@@ -1,0 +1,13 @@
+# ML & Bayesian Optimization
+botorch
+gpytorch
+torch
+
+# Data Handling & Analytics
+pandas
+numpy
+scipy
+h5py
+
+# Plotting the BO trajectories
+matplotlib

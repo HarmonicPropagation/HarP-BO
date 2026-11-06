@@ -1,0 +1,52 @@
+# DRAFT: the DOI and the paper reference are added once the Zenodo record and the preprint exist.
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below, and the accompanying paper."
+title: "HarP-BO: Bayesian optimization of high-harmonic generation with HarP"
+type: software
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/HarmonicPropagation/HarP-BO"
+authors:
+  - family-names: Maslarova
+    given-names: Dominika
+    orcid: "https://orcid.org/0000-0002-2756-3722"
+  - family-names: Jansson
+    given-names: Patrik
+    orcid: "https://orcid.org/0000-0003-3078-1437"
+  - family-names: Pouyez
+    given-names: Mattys
+    orcid: "https://orcid.org/0009-0005-9057-3228"
+keywords:
+  - Bayesian optimization
+  - high-order harmonic generation
+  - Gaussian processes
+  - phase matching
+preferred-citation:
+  type: article
+  title: "Physics-informed Bayesian optimization of high-harmonic generation in gases"
+  authors:
+    - family-names: Maslarova
+      given-names: Dominika
+      orcid: "https://orcid.org/0000-0002-2756-3722"
+    - family-names: Pouyez
+      given-names: Mattys
+      orcid: "https://orcid.org/0009-0005-9057-3228"
+    - family-names: Jansson
+      given-names: Patrik
+      orcid: "https://orcid.org/0000-0003-3078-1437"
+    - family-names: Vabek
+      given-names: Jan
+      orcid: "https://orcid.org/0000-0001-7689-7174"
+    - family-names: Weissenbilder
+      given-names: Robin
+      orcid: "https://orcid.org/0000-0002-8081-3727"
+    - family-names: Hagedorn
+      given-names: Linus
+      orcid: "https://orcid.org/0009-0002-7207-9080"
+    - family-names: "L'Huillier"
+      given-names: Anne
+      orcid: "https://orcid.org/0000-0002-1335-4022"
+    - family-names: Fülöp
+      given-names: Tünde
+      orcid: "https://orcid.org/0000-0002-5898-0393"
+  year: 2026

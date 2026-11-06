@@ -1,0 +1,7 @@
+# Testing
+pytest
+hypothesis
+
+# Static Type Checking
+mypy
+pandas-stubs

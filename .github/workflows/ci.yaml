@@ -1,0 +1,72 @@
+name: HarP-BO CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ["3.13", "3.14"]
+        # Also test on macOS: numerical round-off differs between platforms, and
+        # the macOS install uses requirements-mac.txt.
+
+    steps:
+    - name: Checkout HarP-BO repository
+      uses: actions/checkout@v4
+
+    - name: Checkout HarP (Physical Solver) repository
+      uses: actions/checkout@v4
+      with:
+        repository: HarmonicPropagation/HarP
+        path: HarP-main
+        ref: 7880bace90d5bec3fd0667b389e39caabcc70de5
+        # The public HarP release v1.0.0 (tag v1.0.0 = 7880bac), fixed for a
+        # reproducible build. Goes together with the statistical_factor
+        # convention in harp_input.py, which refuses older HarP versions.
+    - name: Set up HarP working directory
+      run: |
+        # Link the cloned HarP repo to the home directory so the BO scripts can find it
+        ln -s $GITHUB_WORKSPACE/HarP-main ~/HarP-main
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        # Automatically cache pip downloads to speed up future runs
+        cache: 'pip'
+        cache-dependency-path: |
+          requirements.txt
+          requirements-dev.txt
+
+    - name: Check that requirements-mac.txt matches requirements.txt
+      if: runner.os != 'macOS'
+      run: make check-mac-lock
+
+    - name: Install dependencies (Linux)
+      if: runner.os != 'macOS'
+      run: |
+        make init
+        make dev
+
+    - name: Install dependencies (macOS)
+      if: runner.os == 'macOS'
+      run: |
+        make init-mac
+        make dev-mac
+
+    - name: Run correctness tests
+      run: |
+        make test
+
+    # --- Phase 2: Uncomment these when ready ---
+    # - name: Run static type checking
+    #   run: |
+    #     make typecheck
+

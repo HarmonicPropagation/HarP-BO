@@ -1,0 +1,153 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{geometry}
+\geometry{margin=25mm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\CE}{\ensuremath{\mathrm{CE}}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries
+Numerical Convergence of High-Order Harmonic Generation Simulations for Bayesian Optimization\par}
+
+\vspace{1.1em}
+
+{\normalsize
+Dominika Maslarova$^{1,*}$, Mattys Pouyez$^{1}$,
+Patrik Jansson$^{2}$, Jan Vabek$^{3,4}$,\\
+Robin Weissenbilder$^{5}$, Linus Hagedorn$^{1,3}$,
+Anne L'Huillier$^{5}$, and Tünde Fülöp$^{1}$\par}
+
+\vspace{1em}
+
+\begin{minipage}{0.95\textwidth}
+\centering
+\small
+
+$^{1}$Department of Physics and Astronomy,
+Chalmers University of Technology, Gothenburg, Sweden\par
+\vspace{0.25em}
+
+$^{2}$Department of Computer Science and Engineering,
+Chalmers University of Technology and University of Gothenburg,
+Gothenburg, Sweden\par
+\vspace{0.25em}
+
+$^{3}$Czech Technical University in Prague,
+Faculty of Nuclear Sciences and Physical Engineering,
+Prague, Czech Republic\par
+\vspace{0.25em}
+
+$^{4}$ELI Beamlines Facility,
+The Extreme Light Infrastructure ERIC,
+Doln\'{\i} B\v{r}e\v{z}any, Czech Republic\par
+\vspace{0.25em}
+
+$^{5}$Department of Physics,
+Lund University, Lund, Sweden\par
+
+\vspace{0.7em}
+
+$^{*}$Corresponding author:
+\texttt{dommas@chalmers.se}
+
+\end{minipage}
+\end{center}
+
+\vspace{1.2em}
+
+
+\section{Numerical convergence}\label{sec:numconv}
+
+To assess the numerical accuracy of the high-order harmonic generation simulations performed with the HarP code, we investigated the sensitivity of the conversion efficiency (CE) to numerical discretization and computational-domain size. For the two-dimensional (2D) optimization, we tested 32 points distributed across the pressure--length domain. For the four-dimensional (4D) optimization, we examined the predicted optimum and selected additional configurations covering different laser parameters.
+
+Preliminary tests indicated the greatest sensitivity to radial discretization and the smallest sensitivity to longitudinal discretization. Consequently, the discretization step sizes selected for the main calculations were
+\begin{equation}
+(\Delta r,\Delta z,\Delta t)=(202.9~\mathrm{nm},L/256,128.9~\mathrm{as}).
+\end{equation}
+In the numerical tests, these were compared with a higher-resolution configuration defined by
+\begin{equation}
+(\Delta r_{\mathrm{res}},\Delta z_{\mathrm{res}},\Delta t_{\mathrm{res}})
+=(\Delta r/2,\Delta z/8,\Delta t/4).
+\end{equation}
+
+We also examined the influence of computational-domain size by doubling the radial and temporal extents from $L_r=3w_0$ and $L_t=3\tau$ to $L_r=6w_0$ and $L_t=6\tau$, while maintaining the original discretization steps.
+
+The CEs obtained with the higher-resolution and enlarged-domain configurations are denoted by $\CE_{\mathrm{res}}$ and $\CE_{\mathrm{domain}}$, respectively. Their absolute differences relative to the CE obtained with the numerical configuration used in the optimization, $\CE_{\mathrm{final}}$, are defined as
+\begin{equation}
+\Delta\CE_{\mathrm{res}}=|\CE_{\mathrm{final}}-\CE_{\mathrm{res}}|,
+\qquad
+\Delta\CE_{\mathrm{domain}}=|\CE_{\mathrm{final}}-\CE_{\mathrm{domain}}|.
+\end{equation}
+
+In the 2D optimization, the 32 test points were generated using a Sobol sequence across the same pressure--length domain as in the accompanying study, with the laser intensity and pulse duration kept fixed. The results are summarized in Table~\ref{tab:numerical_convergence}. The maximum absolute differences were $4.57\times10^{-8}$ for the higher-resolution calculations and $1.30\times10^{-8}$ for the enlarged-domain calculations, both small compared with the characteristic CE values of order $10^{-6}$ in the high-efficiency regions relevant to the optimization.
+
+Although larger relative differences were observed in regions of low CE, their absolute magnitudes remained small. For example, at point 28, increasing the numerical resolution resulted in a relative difference of approximately $13\%$, but an absolute difference of only $1.7\times10^{-9}$. Similarly, enlarging the computational domain produced a relative difference of approximately $50\%$, corresponding to an absolute difference of only $5.6\times10^{-9}$. These results show that even relatively large percentage differences in low-efficiency regions correspond to small absolute changes compared with the CE values relevant to the optimization.
+
+In the 4D optimization, the same numerical configurations were tested at the Gaussian-process-predicted optimum and at additional points representing different regions of the parameter space. At the predicted optimum, increasing the numerical resolution changed CE by $9.0\times10^{-8}$, which corresponds to approximately $1.3\%$. Enlarging the computational domain produced a smaller absolute difference of $0.8\times10^{-9}$.
+
+The additional 4D test points revealed a greater sensitivity to numerical resolution, particularly at high driving intensities and longer pulse durations. The largest observed absolute difference was approximately $1.2\times10^{-7}$ ($4.8\%$), at a driving intensity of $10^{15}~\mathrm{W/cm^2}$ and a pulse duration of $11~\mathrm{fs}$. The influence of computational-domain size remained considerably smaller, with relative differences below $0.12\%$ at the tested points.
+
+To further investigate the numerical sensitivity, we refined each discretization step separately, reducing $\Delta t$, $\Delta r$, and $\Delta z$ by factors of four, two, and eight, respectively. At the best 2D point, these refinements changed CE by approximately $+0.6\%$, $-0.6\%$, and $+0.25\%$, respectively. At the 4D optimum, the corresponding changes were $+1.6\%$, $-1.2\%$, and $+0.7\%$. These results show a greater sensitivity to numerical resolution in 4D, with the effects of individual refinements partially compensating when combined.
+
+Overall, the selected numerical parameters provide sufficiently stable results for the optimization studies, with relatively small differences in the high-efficiency regions of interest. Furthermore, the two best 4D configurations retained the same ranking at both numerical resolutions, supporting the stability of the identified optimum.
+
+
+
+\begin{table}[p]
+\centering
+\caption{\textbf{Numerical convergence study at 32 Sobol points distributed across the pressure--length domain.} The normalized coordinates $L/z_R$ and $pz_R$ represent the medium length and gas pressure, respectively, where $L$ is the medium length, $p$ is the gas pressure, and $z_R$ is the Rayleigh length. Conversion efficiencies are reported for the selected final numerical configuration ($\CE_{\mathrm{final}}$), higher numerical resolution ($\CE_{\mathrm{res}}$), and enlarged computational domain ($\CE_{\mathrm{domain}}$). Absolute differences quantify sensitivity to numerical discretization and computational-domain size. All CE values and differences are given in units of $10^{-8}$.}
+\label{tab:numerical_convergence}
+\vspace{0.8em}
+\normalsize
+\renewcommand{\arraystretch}{1.00}
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{r r r r r r r r}
+\toprule
+Point & $L/z_R$ & $pz_R$ [mbar cm] & $\CE_{\mathrm{final}}$ & $\CE_{\mathrm{res}}$ & $\CE_{\mathrm{domain}}$ & $\Delta\CE_{\mathrm{res}}$ & $\Delta\CE_{\mathrm{domain}}$ \\
+\midrule
+1 & 1.00 & 14.86 & 101.98 & 102.16 & 101.69 & 0.19 & 0.29 \\
+2 & 0.65 & 296.12 & 3.46 & 3.37 & 3.47 & 0.09 & 0.01 \\
+3 & 0.12 & 126.70 & 273.84 & 272.40 & 273.85 & 1.44 & 0.01 \\
+4 & 1.26 & 183.99 & 1.45 & 1.48 & 1.44 & 0.02 & 0.01 \\
+5 & 1.44 & 88.15 & 2.46 & 2.40 & 2.31 & 0.06 & 0.14 \\
+6 & 0.30 & 225.73 & 22.50 & 22.63 & 22.45 & 0.13 & 0.05 \\
+7 & 0.47 & 51.45 & 39.00 & 38.39 & 38.92 & 0.61 & 0.09 \\
+8 & 0.82 & 262.14 & 2.43 & 2.38 & 2.42 & 0.05 & 0.01 \\
+9 & 0.87 & 142.24 & 5.17 & 5.09 & 5.15 & 0.08 & 0.01 \\
+10 & 0.53 & 168.46 & 8.81 & 8.76 & 8.78 & 0.05 & 0.03 \\
+11 & 0.25 & 31.60 & 169.29 & 168.93 & 169.29 & 0.36 & 0.00 \\
+12 & 1.39 & 279.39 & 0.62 & 0.66 & 0.51 & 0.04 & 0.10 \\
+13 & 1.22 & 71.88 & 5.57 & 5.56 & 5.45 & 0.00 & 0.12 \\
+14 & 0.08 & 241.71 & 328.62 & 329.36 & 328.62 & 0.74 & 0.00 \\
+15 & 0.69 & 109.70 & 8.47 & 8.46 & 8.45 & 0.01 & 0.02 \\
+16 & 1.04 & 204.17 & 2.01 & 2.02 & 2.01 & 0.01 & 0.00 \\
+17 & 1.12 & 99.05 & 4.44 & 4.43 & 4.43 & 0.00 & 0.00 \\
+18 & 0.73 & 193.65 & 5.02 & 4.96 & 5.02 & 0.07 & 0.01 \\
+19 & 0.05 & 61.50 & 136.56 & 135.99 & 136.56 & 0.58 & 0.00 \\
+20 & 1.14 & 231.49 & 1.47 & 1.49 & 1.44 & 0.01 & 0.03 \\
+21 & 1.33 & 23.41 & 55.01 & 54.72 & 53.71 & 0.29 & 1.30 \\
+22 & 0.24 & 271.04 & 26.14 & 26.08 & 26.13 & 0.06 & 0.01 \\
+23 & 0.53 & 134.32 & 10.43 & 10.42 & 10.41 & 0.01 & 0.01 \\
+24 & 0.93 & 160.42 & 3.70 & 3.64 & 3.72 & 0.06 & 0.02 \\
+25 & 0.78 & 41.22 & 23.51 & 23.46 & 23.43 & 0.05 & 0.08 \\
+26 & 0.39 & 251.78 & 11.41 & 11.38 & 11.41 & 0.03 & 0.00 \\
+27 & 0.38 & 77.65 & 29.45 & 29.18 & 29.52 & 0.27 & 0.07 \\
+28 & 1.48 & 215.06 & 1.11 & 1.28 & 0.55 & 0.17 & 0.56 \\
+29 & 1.27 & 118.64 & 2.32 & 2.31 & 2.33 & 0.01 & 0.01 \\
+30 & 0.18 & 176.10 & 168.57 & 164.00 & 168.55 & 4.57 & 0.03 \\
+31 & 0.59 & 6.53 & 24.23 & 24.15 & 24.28 & 0.09 & 0.05 \\
+32 & 0.98 & 287.92 & 1.50 & 1.51 & 1.53 & 0.00 & 0.02 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

@@ -1,0 +1,101 @@
+group,config,run,seed,N,best_ce,nrmse,ssim
+2D LogEI,"L, p",bo_2d_L__p_log_ei_matern52,0,60,3.66717806558905e-06,0.13754956695098092,0.7689021208611513
+2D LogEI,"L, p",bo_2d_L__p_log_ei_matern52,1,60,3.654442849371267e-06,0.11364205548630893,0.8527986834115369
+2D LogEI,"L, p",bo_2d_L__p_log_ei_matern52,2,60,3.6656005213465015e-06,0.12996663327773822,0.7946109050674077
+2D LogEI,"L, p",bo_2d_L__p_log_ei_matern52,3,60,3.6467936248591e-06,0.12926800410797432,0.7868796525658049
+2D LogEI,"L, p",bo_2d_L__p_log_ei_matern52,4,60,3.616023275868279e-06,0.10608924913660481,0.8685201267270024
+2D LogEI,"log L, log p",bo_2d_log_L__log_p_log_ei_matern52,0,60,3.6373114194670937e-06,0.06995699071731722,0.9424104474182101
+2D LogEI,"log L, log p",bo_2d_log_L__log_p_log_ei_matern52,1,60,3.642830262528713e-06,0.05759026654193502,0.9516360316027351
+2D LogEI,"log L, log p",bo_2d_log_L__log_p_log_ei_matern52,2,60,3.6620639319737806e-06,0.07411771435634913,0.9398965353513303
+2D LogEI,"log L, log p",bo_2d_log_L__log_p_log_ei_matern52,3,60,3.633528019600481e-06,0.07170598482359668,0.9233685652647482
+2D LogEI,"log L, log p",bo_2d_log_L__log_p_log_ei_matern52,4,60,3.599494063443308e-06,0.04997827109521269,0.9704717666776738
+2D LogEI,"p/L, pL",bo_2d_p_over_L__pL_log_ei_matern52,0,60,3.663599917840681e-06,0.1050906546017772,0.8756384936366043
+2D LogEI,"p/L, pL",bo_2d_p_over_L__pL_log_ei_matern52,1,60,3.660987625947336e-06,0.12017531983092013,0.8375675029833822
+2D LogEI,"p/L, pL",bo_2d_p_over_L__pL_log_ei_matern52,2,60,3.6640669779065537e-06,0.0927126538277283,0.8995162325093228
+2D LogEI,"p/L, pL",bo_2d_p_over_L__pL_log_ei_matern52,3,60,3.66232030824935e-06,0.10635420750733542,0.8788997544029982
+2D LogEI,"p/L, pL",bo_2d_p_over_L__pL_log_ei_matern52,4,60,3.654243080240786e-06,0.09744790250465661,0.889081077567853
+2D LogEI,"√(p/L), √(pL)",bo_2d_sqrt_p_over_L__sqrt_pL_log_ei_matern52,0,60,3.6574952991879127e-06,0.049277688098396596,0.9738912375121422
+2D LogEI,"√(p/L), √(pL)",bo_2d_sqrt_p_over_L__sqrt_pL_log_ei_matern52,1,60,3.6589903686153294e-06,0.06153178892148214,0.9595881195991615
+2D LogEI,"√(p/L), √(pL)",bo_2d_sqrt_p_over_L__sqrt_pL_log_ei_matern52,2,60,3.656983729736652e-06,0.060550915289818215,0.9627874097959812
+2D LogEI,"√(p/L), √(pL)",bo_2d_sqrt_p_over_L__sqrt_pL_log_ei_matern52,3,60,3.6600780045560095e-06,0.05900557354615485,0.9605036735343128
+2D LogEI,"√(p/L), √(pL)",bo_2d_sqrt_p_over_L__sqrt_pL_log_ei_matern52,4,60,3.66584253996007e-06,0.05431177193665158,0.9686211930910628
+2D LogEI,"log(p/L), log(pL)",bo_2d_log_p_over_L__log_pL_log_ei_matern52,0,60,3.643536736755932e-06,0.03757717462855541,0.9856080042475397
+2D LogEI,"log(p/L), log(pL)",bo_2d_log_p_over_L__log_pL_log_ei_matern52,1,60,3.6471322148006e-06,0.02506551258046872,0.9933983342702466
+2D LogEI,"log(p/L), log(pL)",bo_2d_log_p_over_L__log_pL_log_ei_matern52,2,60,3.615330069310885e-06,0.028964015611590822,0.9910064843555066
+2D LogEI,"log(p/L), log(pL)",bo_2d_log_p_over_L__log_pL_log_ei_matern52,3,60,3.636088039083343e-06,0.03699209227696391,0.9862459557469011
+2D LogEI,"log(p/L), log(pL)",bo_2d_log_p_over_L__log_pL_log_ei_matern52,4,60,3.639132086116656e-06,0.03401711052177302,0.9854836900350468
+2D Straddle,target 25% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle25per_max3_matern52,0,60,3.010586347241089e-06,0.021979502964764825,0.9949937094012343
+2D Straddle,target 25% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle25per_max3_matern52,1,60,3.1715913097653654e-06,0.046487807600156805,0.966027925202318
+2D Straddle,target 25% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle25per_max3_matern52,2,60,2.98225369475349e-06,0.026634881332715035,0.9927435434736049
+2D Straddle,target 25% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle25per_max3_matern52,3,60,3.4582602807679225e-06,0.09414019001353478,0.8620789113228026
+2D Straddle,target 25% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle25per_max3_matern52,4,60,2.613331309520509e-06,0.03884011998357105,0.9812999235736448
+2D Straddle,target 50% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle50per_max3_matern52,0,60,3.10927402213461e-06,0.06266236379288871,0.9566722345929249
+2D Straddle,target 50% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle50per_max3_matern52,1,60,3.62116179115832e-06,0.030435331281140614,0.9910102756969519
+2D Straddle,target 50% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle50per_max3_matern52,2,60,2.9128166339092047e-06,0.022367010565976272,0.9949304828987925
+2D Straddle,target 50% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle50per_max3_matern52,3,60,3.294353333483717e-06,0.03473725758243852,0.9843774063975353
+2D Straddle,target 50% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle50per_max3_matern52,4,60,3.226513614452943e-06,0.038461033343569526,0.9844660329973
+2D Straddle,target 90% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle90per_max3_matern52,0,60,3.414075799961508e-06,0.07829677799685082,0.907230346849996
+2D Straddle,target 90% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle90per_max3_matern52,1,60,3.347372555785754e-06,0.06778187392877671,0.9317427451193451
+2D Straddle,target 90% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle90per_max3_matern52,2,60,3.5154807222492435e-06,0.08617465317593781,0.8873574392846488
+2D Straddle,target 90% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle90per_max3_matern52,3,60,3.393691215895898e-06,0.09212727046702245,0.8758359283150525
+2D Straddle,target 90% of 3e-6,bo_2d_log_p_over_L__log_pL_straddle90per_max3_matern52,4,60,3.2876431964799908e-06,0.04750992460644407,0.9696427557993649
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,0,30,4.04205155878478e-06,0.09687182805238392,0.5306104544887854
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,0,60,5.142387992361263e-06,0.08725638799533635,0.6439049285654692
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,0,120,5.142387992361263e-06,0.12570125028820814,0.46345827418485747
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,1,30,2.866864668823013e-06,0.11594775869322235,0.135222832713524
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,1,60,3.473768513890537e-06,0.12096996683623375,0.26751831654550895
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,1,120,5.706859454471425e-06,0.1296215050897097,0.4660973521989024
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,2,30,3.317971033003258e-06,0.14182782793919751,0.20004552732031197
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,2,60,3.642894891433557e-06,0.12160588310553375,0.3330422384095844
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,2,120,5.298129830887569e-06,0.13503375289985653,0.4521716180823645
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,3,30,3.205892137964361e-06,0.09944354642005003,0.3986961629934703
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,3,60,5.946480122905213e-06,0.09400085471428402,0.5787592401437559
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,3,120,5.946480122905213e-06,0.08833802624422632,0.628471058407531
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,4,30,2.965154742302632e-06,0.12409796004116519,0.2082885854775121
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,4,60,3.6783535876973153e-06,0.12061342109893294,0.30308382712440857
+4D,"naive (L, p, I, τ)",bo_4d_L__p__I__tau_straddle100per_max3_matern52,4,120,4.591566900751603e-06,0.10790420585036536,0.45262376735144244
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,0,30,5.129332924541281e-06,0.06401191239866133,0.8210441160068389
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,0,60,5.129332924541281e-06,0.06942775130252915,0.806320006743915
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,0,120,5.129332924541281e-06,0.10934639262867873,0.5428549719629953
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,1,30,4.663719110407124e-06,0.08549846202490531,0.6645526328861568
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,1,60,4.663719110407124e-06,0.09321100812280617,0.5962391194046772
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,1,120,4.663719110407124e-06,0.08319944327319512,0.683397716403273
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,2,30,3.2585217762841347e-06,0.08514322597667875,0.6358392260465044
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,2,60,5.9937935709847405e-06,0.11704887377320373,0.4986695543073125
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,2,120,5.9937935709847405e-06,0.1348217702670854,0.4547128295248994
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,3,30,5.695245889701404e-06,0.08358252004971681,0.7191315658915274
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,3,60,5.695245889701404e-06,0.07750017047541569,0.73686161894348
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,3,120,5.695245889701404e-06,0.1064375021129167,0.5625865262410338
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,4,30,4.407472459303414e-06,0.1262124582483122,0.3801476435361865
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,4,60,4.407472459303414e-06,0.1175388007995513,0.4976084964037653
+4D,"mapping, τ",bo_4d_log_p_over_L__log_pL__I__tau_straddle100per_max3_matern52,4,120,4.407472459303414e-06,0.10565247203496873,0.567249996505438
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,0,30,6.4558577681044e-06,0.07790566360378699,0.7051960836123918
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,0,60,6.4558577681044e-06,0.06804464557775125,0.8028958738606762
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,0,120,6.4558577681044e-06,0.0702299986457383,0.8103230325836234
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,1,30,3.5678085699582107e-06,0.10413920996607089,0.3147378065078992
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,1,60,3.931260921016357e-06,0.09254976621683281,0.5681443417205881
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,1,120,6.580316597012534e-06,0.08113544566559037,0.71887650427934
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,2,30,3.430300767346056e-06,0.09332470353720203,0.5553351686515127
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,2,60,4.543466125492535e-06,0.06875489683303775,0.811630343716188
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,2,120,4.543466125492535e-06,0.10338205504812378,0.6074604072876206
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,3,30,6.241240545100599e-06,0.08480386526938796,0.6743632470593138
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,3,60,6.241240545100599e-06,0.09875136437352891,0.5920575411541865
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,3,120,6.241240545100599e-06,0.11587184936034045,0.5370343023839518
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,4,30,4.442770552750975e-06,0.07708535085235184,0.7447332536212969
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,4,60,5.475411213152485e-06,0.06529359664717103,0.8505554041497964
+4D,"mapping, 1/√τ, CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52,4,120,5.475411213152485e-06,0.08545585640897788,0.7169355225772261
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,0,30,5.22827600443292e-06,0.05356203285196451,0.8865531199720771
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,0,60,5.549575993438342e-06,0.05488830131633027,0.8798683818143775
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,0,120,5.549575993438342e-06,0.044025750558032956,0.9199781640255664
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,1,30,4.146981647265448e-06,0.11478499406187243,0.570177091118716
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,1,60,5.879907022912882e-06,0.052882932829231996,0.8948646979404907
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,1,120,5.879907022912882e-06,0.045956345392702005,0.9204026761822651
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,2,30,5.961788904222279e-06,0.06023884818458969,0.8686731484524812
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,2,60,5.961788904222279e-06,0.04065101238681532,0.9389388043726629
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,2,120,5.961788904222279e-06,0.03591303647875398,0.9445697835687693
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,3,30,5.636554320700948e-06,0.054965722107573056,0.8862047525307939
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,3,60,5.636554320700948e-06,0.060150080576492224,0.8633527740415792
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,3,120,5.636554320700948e-06,0.06491612984032807,0.7998781435712465
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,4,30,4.91680584682585e-06,0.059462725686384645,0.85507721160112
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,4,60,4.91680584682585e-06,0.05186104333122478,0.8923184785598062
+4D,"mapping, 1/√τ, √CE",bo_4d_log_p_over_L__log_pL__I__inv_sqrt_tau_straddle100per_max3_matern52_sqrtCE,4,120,4.91680584682585e-06,0.04881567110308406,0.9005418844951425
