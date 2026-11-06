@@ -19,10 +19,10 @@ jobs:
 
     steps:
     - name: Checkout HarP-BO repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
 
     - name: Checkout HarP (Physical Solver) repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         repository: HarmonicPropagation/HarP
         path: HarP-main
